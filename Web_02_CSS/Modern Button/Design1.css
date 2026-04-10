@@ -1,0 +1,44 @@
+*
+{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.wrapper
+{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.Pinkbaton
+{
+    background-color:#e84949;
+    padding: 0.8rem 2.3rem;
+    color: white;
+    font-size: 18px;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    position: relative;
+    z-index: 1;
+}
+/*  before sudo selector --> it simply add the content before or after the original content   */
+.Pinkbaton::before
+{
+    content: "";
+background-color: #1f1f1f;  
+position: absolute;  
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+transform: scaleX(0);
+transform-origin: left;
+transition: all 2s;
+z-index: -1;
+}
+.Pinkbaton:hover::before
+{
+    transform: scaleX(1);
+}

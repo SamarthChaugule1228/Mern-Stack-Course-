@@ -1,0 +1,30 @@
+      p,h1
+        {
+            color: aqua;
+            font-size: large;
+        }
+        /* Class Selector */
+        .red{
+            color: red;
+            font-size: x-large;
+        }
+        .green:hover{
+            color: green;
+            font-size: small;
+        }
+        #baton{
+            color: brown;
+            background-color: aquamarine;   
+        }
+        #baton:hover{
+            background-color: rgb(5, 2, 8);
+        }
+        
+        #clack-para
+        {
+            color: cyan !important ;
+        }
+        .paraset
+        {
+            color: darkviolet ;
+        }

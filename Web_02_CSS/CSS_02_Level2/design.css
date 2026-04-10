@@ -1,0 +1,44 @@
+/* General styling for all demo divs */
+.demo {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    line-height: 100px;
+    border: 2px solid black;
+}
+
+/* Static Positioning (default) */
+#div1 {
+    background-color: teal;
+    position: static; /* This is the default positioning */
+}
+
+/* Relative Positioning */
+#div2 {
+    background-color: darkorange;
+    position: relative;
+    top: 20px; /* Moves the element 20px down from its original position */
+    left: 20px; /* Moves the element 20px to the right from its original position */
+}
+
+/* Absolute Positioning */
+#div3 {
+    background-color: darkred;
+    position: absolute;
+    top: 50px; /* Positioned 50px from the top of the nearest positioned ancestor */
+    left : 50px; /* Positioned 50px from the left of the nearest positioned ancestor */
+}
+
+/* Fixed Positioning */
+#div4 {
+    background-color: darkblue;
+    position: fixed;
+
+    bottom: 10px; /* Fixed 10px from the bottom of the viewport */
+    right: 10px; /* Fixed 10px from the right of the viewport */
+    transform: perspective(15px) translateZ(-10px) rotateX(5deg) rotateY(5deg) ;
+}

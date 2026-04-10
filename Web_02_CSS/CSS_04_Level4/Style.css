@@ -1,0 +1,72 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#Wrapper
+{
+    height: 100vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    perspective: 15px;
+
+
+}
+.Container
+{
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    flex-direction: column;
+    z-index: -1;
+
+}
+.Background
+{
+    transform: translateZ(-40px) scale(5);
+}
+.foreground
+{
+    transform: translateZ(-30px) scale(1);
+    display: inline-block;
+            box-shadow: 3px 6px 10px rgba(212, 142, 11, 0.937); /* Orange shadow */
+            border-radius: 40px; /* Optional: Rounded corners */
+}
+.Background,.foreground
+{
+    position:absolute ;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: -1;
+
+}
+h1
+{
+    position: absolute;
+    font-size: 60px ;
+}
+section
+{
+    background-color: rgb(45,45,45);
+    color: white;
+    padding: 5rem 0;
+
+}
+
+.bg1
+{
+    background-image: url(ground.jpeg);
+}
+.bg2
+{
+    background-image: url(ground.jpeg);
+}
+.bg3
+{
+    background-image: url(ground.jpeg);
+}

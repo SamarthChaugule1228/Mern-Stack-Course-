@@ -1,0 +1,27 @@
+.box{
+    border: 2px solid black;
+    width: 200px;
+    height: 300px;
+    box-shadow: 3px 3px 3px;
+    background-image: linear-gradient(45deg,red,pink);
+    margin: 10px;
+    box-shadow: inset 5px 5px 50px 5px green;
+}   
+.myredi{
+    border: 2px solid black;
+    width: 200px;
+    height: 300px;
+    background-image:radial-gradient(circle,rgb(212, 227, 0) ,rgb(255, 230, 6) ,blue );
+    margin: 10px;
+    box-shadow:inset 10px 10px 40px 10px rgb(20, 45, 114) ;
+    
+}
+.demo
+{
+    max-height: 200px scroll;
+    border: 1px solid blue;
+    margin: 10px;
+    transform: rotate(-45deg);
+    transform: scaleX(100px);
+    transform: skew(30deg);
+}

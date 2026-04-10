@@ -1,0 +1,43 @@
+.container {
+
+    height: 700px;
+    width: 400px;
+    border: 1px solid red;
+    background-color: yellow;
+    display: grid;
+    grid-template-rows: 250px 600px 100px; /* Added 100px row for footer */
+    grid-template-columns: repeat(8, 1fr); /* Changed to 8 equal columns */
+    grid-template-areas:
+        "hd hd hd hd hd hd hd hd"
+        "side main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    /* justify-content: ; */
+gap: 20px;
+justify-content: center;
+
+
+
+}
+
+.box {
+    border: 1px solid green;
+    background-color: aqua;
+    gap: 10px;
+    
+}
+
+#Header {
+    grid-area: hd;
+}
+
+#Content {
+    grid-area: side;
+}
+
+#Sidebar {
+    grid-area: main;
+}
+
+#Footer {
+    grid-area: ft;
+}
