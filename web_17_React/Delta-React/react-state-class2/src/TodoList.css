@@ -1,0 +1,89 @@
+/* Beautiful styling for TodoList component */
+:root{
+  --bg: #0f1724;
+  --card: #0f1724;
+  --accent: #6ee7b7;
+  --accent-2: #60a5fa;
+  --muted: #94a3b8;
+  --danger: #ff6b6b;
+  --surface: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+}
+
+.todo-container{
+  max-width: 720px;
+  margin: 28px auto;
+  background: var(--surface);
+  padding: 22px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 8px 30px rgba(2,6,23,0.5);
+  color: #e6eef6;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+.title{
+  margin: 6px 0 12px 0;
+  font-size: 20px;
+  letter-spacing: 1px;
+  color: white;
+}
+
+.input-row{
+  display:flex;
+  gap:12px;
+  align-items:center;
+}
+
+input[type="text"]{
+  padding: 12px 14px;
+  height:42px;
+  width:100%;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.06);
+  background: rgba(255,255,255,0.03);
+  color: #e6eef6;
+  outline: none;
+  transition: box-shadow .14s ease, border-color .14s ease;
+}
+
+input[type="text"]:focus{ box-shadow: 0 6px 18px rgba(96,165,250,0.08); border-color: rgba(96,165,250,0.7)}
+
+.btn-primary.add-btn{ background: linear-gradient(90deg,var(--accent),var(--accent-2)); border:none; padding:10px 14px; color:#05263a; border-radius:10px; font-weight:600; cursor:pointer}
+
+.meta-row{ display:flex; gap:14px; margin-top:10px; color:var(--muted); align-items:center}
+.counts{ font-size:13px; padding:6px 8px; background: rgba(255,255,255,0.02); border-radius:8px }
+
+ul{ list-style:none; padding:0; margin-top:18px }
+
+.task-item{
+  display:flex; align-items:center; justify-content:space-between; gap:12px; padding:12px; border-radius:10px; margin-bottom:10px; transition: transform .12s ease, background .12s ease; background: rgba(255,255,255,0.015)
+}
+.task-item:hover{ transform: translateY(-3px); background: linear-gradient(90deg, rgba(96,165,250,0.03), rgba(110,231,183,0.02)) }
+
+.task-left{ display:flex; align-items:center; gap:10px; width:60% }
+.task-checkbox{ width:18px; height:18px; border-radius:4px }
+
+.task-text{ font-size:15px; color: #e6eef6 }
+
+.task-item.completed .task-text{ text-decoration:line-through; color: rgba(255,255,255,0.45) }
+
+.badge{ font-size:12px; padding:5px 8px; border-radius:999px; background: rgba(255,255,255,0.02); color:var(--muted) }
+
+.actions{ display:flex; gap:8px; align-items:center; margin-left:auto }
+
+.actions button{ border:none; padding:8px 10px; border-radius:8px; cursor:pointer; color:#05263a; font-weight:600 }
+.btn-done{ background: linear-gradient(90deg,var(--accent),#34d399); color:#04303a }
+.btn-undo{ background: linear-gradient(90deg,#f3f4f6,#c7d2fe); color:#05263a }
+.btn-edit{ background: linear-gradient(90deg,#fef08a,#fbbf24); color:#05263a }
+.btn-save{ background: linear-gradient(90deg,#60a5fa,#3b82f6); color:#fff }
+.btn-ghost{ background: transparent; color:var(--muted); padding:6px 8px }
+
+.delete-btn{ background: linear-gradient(90deg,#ff7a7a,#ff4d4f); color:white; padding:8px 10px; border-radius:8px }
+
+.delete-btn:hover, .btn-done:hover, .btn-undo:hover, .btn-edit:hover, .btn-save:hover{ filter:brightness(.95) }
+
+@media (max-width:600px){
+  .task-left{ width:100% }
+  .actions{ margin-top:8px }
+  .todo-container{ padding:14px }
+}
