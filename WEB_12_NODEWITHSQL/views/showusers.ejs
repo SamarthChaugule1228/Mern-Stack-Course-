@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Users </title>
+    <style>
+       table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 20px auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    th, td {
+        border: 2px solid red;
+        padding: 12px 15px;
+        text-align: center;
+        transition: background-color 0.3s ease;
+    }
+
+    th {
+        background-color: #ffdddd;
+        font-weight: bold;
+    }
+
+    tr:hover {
+        background-color: #ffe6e6;
+    }
+    </style>
+</head>
+<body>
+    <h1>Users Data</h1>
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>username </th>
+            <th>Gmail</th>
+        </tr>
+        <% for(let user of users){ %>
+            <tr>
+            <td><%= user.id %></td>
+            <td><%= user.username %></td>
+            <td><%= user.email %></td>
+
+        </tr>
+            <% } %>
+    </table>
+
+</body>
+</html>
