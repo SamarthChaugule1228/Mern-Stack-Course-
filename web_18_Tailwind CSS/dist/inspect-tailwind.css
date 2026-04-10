@@ -1,0 +1,10 @@
+/*! tailwindcss v4.1.17 | MIT License | https://tailwindcss.com */
+.hidden {
+  display: none;
+}
+.italic {
+  font-style: italic;
+}
+.underline {
+  text-decoration-line: underline;
+}
