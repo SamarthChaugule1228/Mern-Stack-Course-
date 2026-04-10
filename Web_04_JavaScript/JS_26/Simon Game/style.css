@@ -1,0 +1,54 @@
+.body
+{
+    text-align: center;
+}
+.btn-container
+{
+    display: flex ;
+
+
+}
+.line-one
+{
+    margin: 1rem;
+}
+.line-two
+{
+    margin: 1rem ;
+}
+.btn
+{
+    width: 200px;
+    height: 200px;
+    border: 10px solid black;
+    border-radius: 2px;
+    margin: 1rem;
+
+    justify-content: center;
+}
+.yellow
+{
+    background-color: yellow;
+}
+.red
+{
+    background-color: red;
+}
+.purple
+{
+    background-color: purple;
+}
+.green
+{
+    background-color: green;
+}
+#h2
+{
+ justify-content: center; 
+}
+.flash {
+    opacity: 0.5;
+}
+.game-over {
+    background-color: red;
+}

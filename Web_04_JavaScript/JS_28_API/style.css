@@ -1,0 +1,32 @@
+.head
+{
+    margin-left: 50px;
+}
+.para1
+{
+      margin-left: 70px;  
+      margin-top: 30px;
+      margin-bottom: 30px;
+}
+.btn
+{
+    padding: 10px;
+    margin-left: 100px;
+    background-color:  blue;
+    color: black;
+}
+.btn:hover{
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
+.btn1
+{
+    padding: 10px;
+    margin-left: 100px;
+    background-color:  blue;
+    color: black;
+}
+.btn1:hover{
+    background-color: blanchedalmond;
+    cursor: pointer;
+}
